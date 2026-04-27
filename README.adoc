@@ -1,0 +1,13 @@
+= Phrack as EPUB
+
+https://phrack.org/index_latest[Phrack] as `.epub` files, to be read in e-readers.
+
+Download the EPUB files from https://github.com/goncalor/phrack-epub/releases[releases].
+The source code in the repo is just automation to create the EPUB files.
+
+What to expect from the EPUB:
+
+* The text is monospaced, using Noto Sans Mono as embedded font
+* The text has the same line breaks as the original Phrack `.txt` files, i.e. there's no unwrapping of the text
+** This is so that the ASCII art is not damaged
+** This also means you many need to play with the font size on the e-reader to display things nicely
