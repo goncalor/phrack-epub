@@ -17,14 +17,14 @@ for txt in $(ls phrack*.txt); do
 <pre>
 EOF
 
-    cat "$txt" | recode UTF-8..html >> "$TMPFILE"
+    cat "$txt" | recode UTF-8..html | sed '1000~1000 a </pre><pre>' >> "$TMPFILE"
 
     cat >> "$TMPFILE" <<EOF
 </pre>
 </body>
 EOF
 
-    ebook-convert "$TMPFILE" "$base.epub" --extra-css="$CSS" --margin-left=0 --margin-right=0 --no-default-epub-cover --embed-all-fonts --disable-font-rescaling --title="$title" -vv
+    ebook-convert "$TMPFILE" "$base.epub" --extra-css="$CSS" --margin-left=0 --margin-right=0 --no-default-epub-cover --embed-all-fonts --disable-font-rescaling --title="$title"
 
 done
 
