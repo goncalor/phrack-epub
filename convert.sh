@@ -17,7 +17,7 @@ for txt in $(ls phrack*.txt); do
 <pre>
 EOF
 
-    cat "$txt" >> "$TMPFILE"
+    cat "$txt" | recode UTF-8..html >> "$TMPFILE"
 
     cat >> "$TMPFILE" <<EOF
 </pre>
