@@ -24,7 +24,7 @@ EOF
 </body>
 EOF
 
-    ebook-convert "$TMPFILE" "$base.epub" --extra-css="$CSS" --margin-left=0 --margin-right=0 --no-default-epub-cover --embed-all-fonts --disable-font-rescaling --title="$title"
+    ebook-convert "$TMPFILE" "$base.epub" --extra-css="$CSS" --margin-left=0 --margin-right=0 --no-default-epub-cover --embed-all-fonts --disable-font-rescaling --title="$title" -vv
 
 done
 
