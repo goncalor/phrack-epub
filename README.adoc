@@ -12,4 +12,4 @@ What to expect from the EPUB:
 * The text has the same line breaks as the original Phrack `.txt` files, i.e. there's no unwrapping of the text
 ** This is so that the ASCII art is not damaged
 ** This also means you many need to play with the font size on the e-reader to display things nicely
-* The files don't contain a table of contents
+* Table of contents is included in the metadata
